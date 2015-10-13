@@ -1,63 +1,66 @@
 class MyArray
-  attr_accessor :array
+  attr_accessor :array 
 
   def initialize(arr = [])
     @array = arr
   end
 
   def size
-    # TODO
+    @array.length
   end
 
   def reverse
-    # TODO
+    @array.reverse
   end
 
   def max
-    # TODO
+    @array.max
   end
 
   def min
-    # TODO
+    @array.min
   end
 
   def desc
-    # TODO
+    @array.sort.reverse
   end
 
   def asc
-    # TODO
+    @array.sort
   end
 
   def odd
-    # TODO
+    @array.select { |i| !i.even? }
   end
 
   def multiple_to_three
-    # TODO
+    @array.select { |i| i % 3 == 0 }
   end
 
   def uniq
-    # TODO
+    @array.uniq
   end
 
   def devide_on_ten
-    # TODO
+    @array.map { |i| i.to_f / 10 }
   end
 
   def chars
-    # TODO
+    @array.map { |i| (i + 96).chr.to_sym }
   end
 
   def switch
-    # TODO
+    minim = @array.index(@array.min)
+    maxim = @array.index(@array.max)
+    @array[minim], @array[maxim] = @array[maxim], @array[minim]
+    @array
   end
 
   def before_min
-    # TODO
+    @array.select { |i| @array.index(i) < @array.index(@array.min) }
   end
 
   def three_smallest
-    # TODO
+    @array.sort.select { |i| @array.index(i) < 3 }
   end
 end
