@@ -1,5 +1,5 @@
 class MyArray
-  attr_accessor :array 
+  attr_accessor :array
 
   def initialize(arr = [])
     @array = arr

@@ -10,7 +10,7 @@ class Lesson1
       "Я живу #{(d / 365).to_i} или #{d} дней или #{d * 24} часов или
        #{d * 24 * 60} минут или #{d * 24 * 60 * 60} секунд"
     else
-      'Invalid Date Format' 
+      'Invalid Date Format'
     end
   end
 
