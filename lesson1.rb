@@ -1,7 +1,7 @@
 require 'date'
 class Lesson1
   def sum(val = 0)
-    # TODO
+    # TODO 1111
   end
 
   def age(birthday)
